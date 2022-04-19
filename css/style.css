@@ -1,0 +1,140 @@
+/*  */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+
+header,
+footer,
+nav,
+small {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+ul {
+  list-style: none;
+}
+
+/* body */
+
+body {
+  color: #fff;
+  background-color: #1a1c29;
+
+}
+
+/* header */
+
+/* header 上部 */
+
+.disneyplus-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+}
+
+.strHeader {
+  line-height: 1.2;
+}
+
+.disneyplus-headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1230px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.disneyplus-headerLogo {
+  margin-right: 50px;
+  flex-shrink: 0;
+}
+
+.disneyplus-headerLogo img {
+  width: 100px;
+}
+
+.disneyplus-headerBtn {
+  display: flex;
+}
+
+.disneyplus-headerBtn__item {
+  width: 100px;
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  background: #016cfa;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+/* header 下部 */
+
+.disneyplus-globalNavigationSlide {
+  flex-grow: 1;
+  background: #1a1d29;
+  padding-left: 20px;
+}
+
+.disneyplus-globalNavigationInner {
+  max-width: 1230px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.disneyplus-globalNavigationList {
+  display: flex;
+}
+
+.disneyplus-globalNavigationItem {
+  display: flex;
+  height: 48px;
+  margin-right: 44px;
+}
+
+.disneyplus-globalNavigationItem__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+  color: #7e7f7e;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+  transition: all 0.3s 0s ease;
+}
+
+
+.disneyplus-globalNavigationItem__link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s 0s ease;
+  /* 必要？ */
+}
+
+.disneyplus-globalNavigationItem__link:hover {
+  color: #fff;
+  border-bottom: 4px solid #fff;
+}
